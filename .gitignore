@@ -1,0 +1,7 @@
+.private/
+uploads/
+node_modules/
+dist/
+
+.vercel
+.env*

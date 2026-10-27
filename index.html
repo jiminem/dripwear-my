@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#00e1d8">
+    <meta name="description"
+        content="Explore the dripwear.my catalog. Find your fit and enquire directly through WhatsApp.">
+    <title>dripwear.my — Find your everyday rotation.</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="albums.css">
+    <script defer src="config.js"></script>
+    <script defer src="catalog-data.js"></script>
+    <script defer src="app.js"></script>
+    <script defer src="albums.js"></script>
+</head>
+
+<body>
+    <div class="announcement" aria-label="Store announcements" tabindex="0"><span class="sr-only">dripwear.my. Custom
+            jerseys and teamwear. Your team, your identity. Enquire on WhatsApp.</span>
+        <div class="announcement-track" aria-hidden="true">
+            <div class="announcement-group"><span>DRIPWEAR.MY</span><span class="announcement-star"
+                    aria-hidden="true">&#10038;</span><span>CUSTOM JERSEYS &amp; TEAMWEAR</span><span
+                    class="announcement-star" aria-hidden="true">&#10038;</span><span>YOUR TEAM. YOUR
+                    IDENTITY.</span><span class="announcement-star" aria-hidden="true">&#10038;</span><span>ENQUIRE ON
+                    WHATSAPP</span><span class="announcement-star" aria-hidden="true">&#10038;</span></div>
+            <div class="announcement-group"><span>DRIPWEAR.MY</span><span class="announcement-star"
+                    aria-hidden="true">&#10038;</span><span>CUSTOM JERSEYS &amp; TEAMWEAR</span><span
+                    class="announcement-star" aria-hidden="true">&#10038;</span><span>YOUR TEAM. YOUR
+                    IDENTITY.</span><span class="announcement-star" aria-hidden="true">&#10038;</span><span>ENQUIRE ON
+                    WHATSAPP</span><span class="announcement-star" aria-hidden="true">&#10038;</span></div>
+        </div>
+    </div>
+    <header><a class="wordmark" href="index.html" aria-label="dripwear.my home"><img class="brand-image"
+                src="assets/dripp-logo-transparent.png" alt="Dripp"><span class="brand-name">DRIP.WEAR</span></a>
+        <nav aria-label="Main navigation"><a href="#catalog">Catalog</a><a href="#pricing">Pricing</a><a
+                href="#quotation">Quotation</a><a href="#how">How to order</a><a href="#stories">Our community</a></nav>
+        <button class="button dark header-contact" id="header-contact">WhatsApp admin &#8599;</button>
+    </header>
+    <main>
+        <section class="hero" aria-label="Dripp custom teamwear">
+            <div class="hero-copy">
+                <div class="eyebrow">CUSTOM TEAMWEAR STUDIO</div>
+                <h1 class="hero-brand"><img src="assets/dripp-logo-transparent.png" alt="Dripp"><span
+                        class="sr-only">Dripp custom
+                        jersey and teamwear</span></h1>
+                <p>Jersey sublimation, original kit design, teamwear, and custom apparel made to give your team a
+                    stronger identity.</p>
+                <div class="hero-actions"><a class="button dark" href="#catalog">Explore the catalog <span
+                            aria-hidden="true">&#8599;</span></a><a class="button hero-whatsapp"
+                        href="https://wa.me/601153903625?text=Hi%20Dripp!%20I%27d%20like%20to%20enquire%20about%20custom%20teamwear."
+                        target="_blank" rel="noopener noreferrer">WhatsApp admin <span
+                            aria-hidden="true">&#8599;</span></a></div>
+            </div>
+            <div class="hero-art"><img class="teamwear-graphic" src="assets/stack-of-trust.png"
+                    alt="Stack of trust: packaged Dripp apparel stacked on a display table"></div>
+        </section>
+        <div class="ticker" aria-hidden="true">WEAR IT YOUR WAY <span>✳</span> BUILT FOR YOUR ROTATION <span>✳</span>
+            KEEP IT ON REPEAT <span>✳</span> WEAR IT YOUR WAY <span>✳</span></div>
+        <nav class="section-jumps" aria-label="Storefront sections"><a href="#catalog">01 Catalog</a><a
+                href="#pricing">02 Pricing</a><a href="#quotation">03 Quotation</a><a href="#how">04 How to order</a><a
+                href="#stories">05 Community</a></nav>
+        <section class="catalog section" id="catalog" aria-labelledby="catalog-title">
+            <div class="section-heading">
+                <div>
+                    <div class="eyebrow">01 / THE CATALOG</div>
+                    <h2 id="catalog-title">Your team. Your options<span>.</span></h2>
+                </div>
+                <p>Find your fit. Ask us anything.<br>We’ll take it from there.</p>
+            </div>
+            <div class="catalog-tools">
+                <div class="filters" role="group" aria-label="Catalog categories"><button data-category="Cutting"
+                        class="active" aria-pressed="true">Cutting</button><button data-category="Collars"
+                        aria-pressed="false">Collars</button><button data-category="Fabrics"
+                        aria-pressed="false">Fabrics</button></div>
+                <div class="search-sort"><label class="search"><span aria-hidden="true">⌕</span><input id="search"
+                            type="search" placeholder="Find a piece…" aria-label="Search products"></label><select
+                        id="sort" aria-label="Sort products">
+                        <option value="featured">Featured</option>
+                        <option value="low">Adjustment: low to high</option>
+                        <option value="high">Adjustment: high to low</option>
+                        <option value="name">Name: A–Z</option>
+                    </select></div>
+            </div>
+            <div class="catalog-meta"><span id="result-count"></span><a id="catalog-source" href="#pricing">2026 PRICES
+                    &amp; ORIGINAL PRICELIST &#8595;</a></div>
+            <div id="products" class="product-grid"></div>
+            <div id="empty" hidden class="empty">No pieces found. Try another search or category.</div>
+        </section>
+        <section class="pricing section" id="pricing" aria-labelledby="pricing-title">
+            <div class="section-heading">
+                <div>
+                    <div class="eyebrow">02 / 2026 PRICELIST</div>
+                    <h2 id="pricing-title">Clear prices. Easy planning<span>.</span></h2>
+                </div>
+                <p>Start with your quantity, then choose your cutting and collar.<br>All prices below are in Malaysian
+                    ringgit (MYR).</p>
+            </div>
+            <div class="pricing-caption">
+                <h3>Base price per jersey</h3><span>Choose a quantity range to start your estimate</span>
+            </div>
+            <div class="price-tiers" aria-label="Quantity pricing">
+                <button type="button" data-price-quantity="10"
+                    aria-label="Estimate 10 jerseys at base price RM 40 each"><span class="tier-range">1&ndash;10
+                        <small>jerseys</small></span><strong><span>RM</span> 40</strong><small>per jersey</small><span
+                        class="tier-action">Estimate this quantity &#8599;</span></button>
+                <button type="button" data-price-quantity="11"
+                    aria-label="Estimate 11 jerseys at base price RM 35 each"><span class="tier-range">11&ndash;90
+                        <small>jerseys</small></span><strong><span>RM</span> 35</strong><small>per jersey</small><span
+                        class="tier-action">Estimate this quantity &#8599;</span></button>
+                <button type="button" data-price-quantity="91"
+                    aria-label="Estimate 91 jerseys at base price RM 30 each"><span class="tier-range">91&ndash;200
+                        <small>jerseys</small></span><strong><span>RM</span> 30</strong><small>per jersey</small><span
+                        class="tier-action">Estimate this quantity &#8599;</span></button>
+                <button type="button" data-price-quantity="201"
+                    aria-label="Estimate 201 jerseys at base price RM 28 each"><span class="tier-range">201+
+                        <small>jerseys</small></span><strong><span>RM</span> 28</strong><small>per jersey</small><span
+                        class="tier-action">Estimate this quantity &#8599;</span></button>
+            </div>
+            <div class="pricing-explainer">
+                <div class="pricing-formula"><span>Base unit price</span><b>+</b><span>Cutting
+                        adjustment</span><b>+</b><span>Collar adjustment</span><b>=</b><strong>Estimated price /
+                        jersey</strong></div>
+                <p>Long sleeve +RM 3 &middot; Muslimah +RM 6 &middot; Kids &minus;RM 2. Collar adjustments range from RM
+                    0 to +RM 5. No extra charge is listed for normal, raglan or U-curve cutting. Fabric charges are not
+                    specified in the pricelist.</p>
+                <p class="pricing-example"><strong>Example:</strong> 20 long-sleeve jerseys with polo collars: RM 35 +
+                    RM 3 + RM 3 = <strong>RM 41 per jersey</strong>, or RM 820 before any other confirmed charges.</p>
+            </div>
+            <details class="original-pricelist" id="original-pricelist">
+                <summary><span><strong>Original 2026 pricelist</strong><small>View all illustrations and options in one
+                            sheet</small></span><span class="sheet-toggle" aria-hidden="true">+</span></summary>
+                <div class="pricelist-sheet">
+                    <div class="sheet-actions">
+                        <p>Tap the image to open it at full size.</p><a href="assets/drip-pricelist-2026.pdf"
+                            target="_blank" rel="noopener">Open PDF &#8599;</a><a href="assets/drip-pricelist-2026.pdf"
+                            download="DRIP-PRICELIST-2026.pdf">Download PDF &#8595;</a>
+                    </div><a href="assets/pricelist-2026.png" target="_blank" rel="noopener"
+                        aria-label="Open original pricelist image at full size"><img src="assets/pricelist-2026.png"
+                            alt="Original Dripp 2026 pricelist with quantity pricing, six cuttings, sixteen collars and four fabrics"
+                            loading="lazy"></a>
+                </div>
+            </details>
+            <p class="pricing-disclaimer">This guide helps you plan your order. Confirm fabric, design requirements,
+                delivery and the final quotation with our WhatsApp admin.</p>
+        </section>
+        <section class="section quote-section" id="quotation" aria-labelledby="quotation-title">
+            <div class="section-heading">
+                <div>
+                    <div class="eyebrow">03 / YOUR QUOTATION</div>
+                    <h2 id="quotation-title">Plan your team order<span>.</span></h2>
+                </div>
+                <p>Choose your specifications for a quick estimate.</p>
+            </div>
+            <div class="quote-estimator">
+                <div>
+                    <h3>Estimate your jersey price</h3>
+                    <p class="muted">A guide based on the pricelist. Confirm fabric, design, delivery and the final
+                        quotation with admin.</p>
+                </div>
+                <div class="quote-fields"><label>Quantity<input id="quote-quantity" type="number" min="1" max="100000"
+                            value="10"></label><label>Cutting<select
+                            id="quote-cutting"></select></label><label>Collar<select id="quote-collar"></select></label>
+                </div>
+                <div class="estimate-result">
+                    <div><strong id="estimate-price"></strong>
+                        <p id="estimate-total"></p>
+                        <p class="muted" id="estimate-breakdown"></p>
+                    </div><button class="button dark" id="quote-enquire">Request a quotation &#8599;</button>
+                </div>
+            </div>
+        </section>
+        <section class="how section" id="how" aria-labelledby="how-title">
+            <div>
+                <div class="eyebrow">04 / HOW TO ORDER</div>
+                <h2 id="how-title">See it. Love it.<br>Let’s talk<span>↗</span></h2>
+                <p>A more personal way to shop.</p>
+            </div>
+            <ol>
+                <li><span>01</span>
+                    <div>
+                        <h3>Find your favourites</h3>
+                        <p>Explore cutting, collar and fabric options.</p>
+                    </div>
+                </li>
+                <li><span>02</span>
+                    <div>
+                        <h3>Choose your specifications</h3>
+                        <p>Choose your quantity, sizes, cutting and collar.</p>
+                    </div>
+                </li>
+                <li><span>03</span>
+                    <div>
+                        <h3>Deal directly on WhatsApp</h3>
+                        <p>Confirm stock, delivery and payment with our admin.</p>
+                    </div>
+                </li>
+            </ol>
+        </section>
+        <section class="section stories" id="stories" aria-labelledby="stories-title">
+            <div class="section-heading">
+                <div>
+                    <div class="eyebrow">05 / OUR COMMUNITY</div>
+                    <h2 id="stories-title">Stories worth sharing<span>.</span></h2>
+                </div>
+                <p>Customer feedback, collaborations and sponsorships.<br>Open an album to see the full story.</p>
+            </div>
+            <div id="album-sections">
+                <p class="story-empty">Loading albums...</p>
+            </div>
+        </section>
+        <section class="closing" id="contact-us" aria-labelledby="contact-title"><span>YOUR NEXT FIT STARTS WITH A
+                CONVERSATION.</span>
+            <h2 id="contact-title">Stay in your element.</h2><button class="button dark" id="contact">Chat with us
+                <span>↗</span></button>
+        </section>
+    </main>
+    <footer><a class="wordmark" href="#"><img class="brand-image" src="assets/dripp-logo-transparent.png"
+                alt="Dripp"><span class="brand-name">dripwear.my</span></a>
+        <p>Good fits. Direct conversations.</p><span>© <span id="year"></span> dripwear.my</span>
+    </footer>
+    <dialog id="product-dialog" aria-labelledby="product-title"><button class="close" data-close="product-dialog"
+            aria-label="Close product details">×</button>
+        <div id="product-detail"></div>
+    </dialog>
+
+    <dialog id="album-dialog" aria-labelledby="album-dialog-title"><button class="close" data-close="album-dialog"
+            aria-label="Close album">&times;</button>
+        <h2 id="album-dialog-title"></h2>
+        <p id="album-dialog-description"></p>
+        <div class="album-viewer"><img id="album-photo" alt=""><button class="album-arrow" id="album-prev"
+                aria-label="Previous photo">&#8249;</button><button class="album-arrow" id="album-next"
+                aria-label="Next photo">&#8250;</button></div>
+        <div class="album-photo-meta">
+            <p id="album-caption"></p><span id="album-position" aria-live="polite"></span>
+        </div>
+        <div id="album-thumbnails" aria-label="Album photos"></div>
+    </dialog>
+    <div id="toast" role="status" aria-live="polite"></div>
+</body>
+
+</html>

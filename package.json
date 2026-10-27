@@ -1,0 +1,17 @@
+{
+  "name": "dripwear-catalog",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "node server.cjs",
+    "check": "node --check app.js && node --check server.cjs && node --check admin-backend.cjs && node --check admin.js && node --check albums.js && node --check cloud-backend.cjs && node --check api/entry.js",
+    "test": "node tests/admin-integration.cjs",
+    "build": "node scripts/build.cjs"
+  },
+  "dependencies": {
+    "@vercel/blob": "^2.8.2"
+  },
+  "overrides": {
+    "zod": "^4.6.6"
+  }
+}
