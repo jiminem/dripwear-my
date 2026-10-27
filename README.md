@@ -35,3 +35,5 @@ The existing admin password is preserved by migration. HTTPS production sessions
 GitHub: https://github.com/jiminem/dripwear-my (private). Vercel project: dripwear-my under jiminems-projects. Main is the production branch.
 
 Checks: npm.cmd run check, npm.cmd test, npm.cmd run build. Isolated live-storage checks: vercel env run -e production -- node tests/cloud-integration.cjs. They use their own private state object and remove the test data afterward.
+
+Analytics dashboard refreshes every 15 seconds while visible, with a Malaysia-time last-updated indicator. Live collection excludes signed-in admin sessions, known bot user agents and local/mobile previews. Event IDs deduplicate re-submissions for 10 minutes. These are actual event counts, not unique visitors or sales; unknown bots can still be counted. The one-time operator reset script backs up previous totals privately before clearing analytics.
