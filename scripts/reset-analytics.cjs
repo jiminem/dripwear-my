@@ -1,0 +1,3 @@
+const {transaction}=require('../cloud-backend.cjs');
+const {put}=require('@vercel/blob');
+(async()=>{const resetAt=new Date().toISOString(),backup='private/analytics-backup-'+Date.now()+'.json';await transaction(async state=>{await put(backup,JSON.stringify({resetAt,stats:state.stats||{}}),{access:'private',addRandomSuffix:false,allowOverwrite:true,contentType:'application/json'});state.stats={};state.recentEvents={};state.analyticsResetAt=resetAt;return true;});console.log('Production analytics reset at '+resetAt+'. Previous counts backed up privately. Admin settings and albums preserved.');})().catch(e=>{console.error(e.message);process.exitCode=1;});
